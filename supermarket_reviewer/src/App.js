@@ -4,11 +4,8 @@ import Search from './Search';
 
 
 function App() {
-  
 
   return (
-    <div >
-      
       <div className="App tc ma0 pa4 min-vh-100">
         <Search />
         <img className="pa4 br-100 h4 w4 dib" alt="tuskys-logo" src='./Assets/img/tuskys.png' /> 
@@ -18,7 +15,6 @@ function App() {
         <CreateReview/>
 
       </div>
-    </div>
   );
 }
 
