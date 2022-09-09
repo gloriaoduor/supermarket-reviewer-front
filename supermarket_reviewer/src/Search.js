@@ -56,7 +56,6 @@ const Search = () => {
         ))}
       </div>  
     </section>
-    
   );
 }
 
