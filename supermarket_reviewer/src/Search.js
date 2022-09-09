@@ -7,7 +7,6 @@ const Search = () => {
   const [searchField, setSearchField] = useState("");
   const [reviewValue, setReview] = useState([]);
   
-
 //search text field to handle data being input 
   const handleChange = e => {
     setSearchField(e.target.value);
@@ -30,8 +29,6 @@ const Search = () => {
     }
 };
 
-
-
   return (
     <section className="garamond">
       <div className="ma0">
@@ -50,18 +47,14 @@ const Search = () => {
          <button className="no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa2">
           Search
         </button>
-       
       </div>
-     
       </form>
 
       <div className="br2 ba dark-gray b--black-10  w-100 mw5 center card-list">
         {reviewValue.map(review =>(
           <ReviewCard review={review}/>
         ))}
-      </div>
-     
-      
+      </div>  
     </section>
     
   );
