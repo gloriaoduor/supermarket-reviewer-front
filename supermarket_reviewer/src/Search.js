@@ -13,7 +13,7 @@ const Search = () => {
     setSearchField(e.target.value);
   };
   
-
+//get data from api
   const SearchReview = async (e) => {
     e.preventDefault();
     console.log('submitting');
