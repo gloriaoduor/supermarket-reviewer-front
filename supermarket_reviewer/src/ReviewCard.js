@@ -6,7 +6,7 @@ function ReviewCard({review}) {
       <div className="card-content">
         <ol
         className="">Comment:  {review["comment"]}<br></br>
-        By:  {review["shopper"].name}
+        By: {review["shopper"].name}
         </ol>
        
       </div>
