@@ -15,7 +15,6 @@ function App() {
         <img className="pa4 br-100 h4 w4 dib" alt="naivas-logo" src='./Assets/img/naivas.png' />
         <img className="pa4 br-100 h4 w4 dib" allt="quickmart-logo" src='./Assets/img/quickmart.png' />
         <img className="pa4 br-100 h4 w4 dib" alt="carrefour-logo" src='./Assets/img/carrefour.png' />
-        
         <CreateReview/>
 
       </div>
