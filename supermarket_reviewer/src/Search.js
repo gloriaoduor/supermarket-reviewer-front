@@ -1,10 +1,11 @@
 import React from 'react'
 import { useState } from 'react'
+import ReviewCard from './ReviewCard'
 
 const Search = () => {
 
   const [searchField, setSearchField] = useState("");
-  const [reviewValue, setReviewValue] = useState("");
+  const [reviewValue, setReview] = useState([]);
   
 
 //search text field to handle data being input 
@@ -20,14 +21,14 @@ const Search = () => {
 
     try{
       const res = await fetch(url);
-      const data = await res.json();  
-      console.log(data);
-      setReviewValue(data)
-      console.log(reviewValue)
+      const data = await res.json();
+      setReview(data.reviews);
+      console.log(reviewValue);
     } catch (err){
       console.log(err);
     }
 };
+
 
 
   return (
@@ -44,9 +45,22 @@ const Search = () => {
           value = {searchField}
           onChange = {handleChange}
         />
-      </div></form>
+         <button className="no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa2">
+          Search
+        </button>
+      </div>
+     
+      </form>
+
+      <div className="card-list">
+        {reviewValue.map(review =>(
+          <ReviewCard review={review}/>
+        ))}
+      </div>
+     
       
     </section>
+    
   );
 }
 
