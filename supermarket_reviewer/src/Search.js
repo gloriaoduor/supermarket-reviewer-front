@@ -12,6 +12,7 @@ const Search = () => {
   const handleChange = e => {
     setSearchField(e.target.value);
   };
+  
 
   const SearchReview = async (e) => {
     e.preventDefault();
@@ -33,8 +34,9 @@ const Search = () => {
 
   return (
     <section className="garamond">
-      <div className="navy georgia ma0 grow">
-        <h2 className="f2">Super Reviews:</h2>
+      <div className="navy  ma0">
+        <h2 className="f2"> REVIEW HUB:</h2>
+        <p>One stop shop for reviews about Kenyan supermarkets</p>
       </div>
       <form onSubmit={SearchReview}>
       <div className="pa2">
@@ -48,11 +50,12 @@ const Search = () => {
          <button className="no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa2">
           Search
         </button>
+       
       </div>
      
       </form>
 
-      <div className="card-list">
+      <div className="br2 ba dark-gray b--black-10  w-100 mw5 center card-list">
         {reviewValue.map(review =>(
           <ReviewCard review={review}/>
         ))}
