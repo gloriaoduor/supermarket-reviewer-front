@@ -34,8 +34,8 @@ const Search = () => {
 
   return (
     <section className="garamond">
-      <div className="navy  ma0">
-        <h2 className="f2"> REVIEW HUB:</h2>
+      <div className="ma0">
+        <h2 className="f2 "> REVIEW HUB:</h2>
         <p>One stop shop for reviews about Kenyan supermarkets</p>
       </div>
       <form onSubmit={SearchReview}>
