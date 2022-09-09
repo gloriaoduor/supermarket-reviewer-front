@@ -10,13 +10,13 @@ function CreateReview() {
   const [shopperName, setShopperName] = useState("");
   const [smId, setSmId] = useState("");
 
-
   const handleReviewChange = e => {
     setReviewComment(e.target.value);
   };
   const handleNameChange = e => {
     setShopperName(e.target.value);
   };
+  
   //clear form on delete
   function clearForm(){
     alert("Are you sure you want to delete?");
