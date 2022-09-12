@@ -4,10 +4,11 @@ function ReviewCard({review}) {
   return (
     <div className="card" key={review.id}>
       <div className="card-content">
-        <ol
-        className="">Comment:  {review["comment"]}<br></br>
-        By: {review["shopper"].name}
-        </ol>
+        <ul className="">
+          <li> Comment:  {review["comment"]}<br></br>
+          By: {review["shopper"].name} </li>
+       
+        </ul>
        
       </div>
     </div>
