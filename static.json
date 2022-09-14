@@ -1,0 +1,4 @@
+{"routes": {
+    "/**": "index.html",
+    "*": "index.html"
+}}
