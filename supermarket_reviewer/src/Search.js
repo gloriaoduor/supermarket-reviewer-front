@@ -17,7 +17,7 @@ const Search = () => {
     e.preventDefault();
     console.log('submitting');
 
-    const url = `http://localhost:9292/${searchField}`
+    const url = `https://sm-reviewer-api.herokuapp.com/${searchField}`
 
     try{
       const res = await fetch(url);

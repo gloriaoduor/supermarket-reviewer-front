@@ -41,7 +41,7 @@ function CreateReview() {
   //fxn to post the new review 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("http://localhost:9292/newreview", {
+    fetch("https://sm-reviewer-api.herokuapp.com/newreview", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
